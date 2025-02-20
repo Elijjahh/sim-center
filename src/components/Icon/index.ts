@@ -11,6 +11,9 @@ import IconArrowDown from './IconArrowDown.vue';
 import IconArrowLeft from './IconArrowLeft.vue';
 import IconFlagEn from './Flag/IconFlagEn.vue';
 import IconFlagRu from './Flag/IconFlagRu.vue';
+import IconFilter from './IconFilter.vue';
+import IconSearch from './IconSearch.vue';
+import IconSort from './IconSort.vue';
 
 export {
   IconSchedule,
@@ -26,4 +29,7 @@ export {
   IconArrowLeft,
   IconFlagEn,
   IconFlagRu,
+  IconFilter,
+  IconSearch,
+  IconSort,
 };
