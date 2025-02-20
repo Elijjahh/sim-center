@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, shallowRef } from 'vue';
 import {
   IconSchedule,
   IconSessions,
@@ -14,42 +14,42 @@ import SidebarMenuItem from '@/components/Sidebar/SidebarMenuItem.vue';
 
 const menu = ref([
   {
-    icon: IconSchedule,
+    icon: shallowRef(IconSchedule),
     name: 'schedule',
     text: 'Расписание',
   },
   {
-    icon: IconSessions,
+    icon: shallowRef(IconSessions),
     name: 'sessions',
     text: 'Учебные сессии',
   },
   {
-    icon: IconRooms,
+    icon: shallowRef(IconRooms),
     name: 'rooms',
     text: 'Список комнат',
   },
   {
-    icon: IconUsers,
+    icon: shallowRef(IconUsers),
     name: 'users',
     text: 'Пользователи',
   },
   {
-    icon: IconGroups,
+    icon: shallowRef(IconGroups),
     name: 'groups',
     text: 'Учебные группы',
   },
   {
-    icon: IconDevices,
+    icon: shallowRef(IconDevices),
     name: 'devices',
     text: 'Список устройств',
   },
   {
-    icon: IconSettings,
+    icon: shallowRef(IconSettings),
     name: 'settings',
     text: 'Настройки системы',
   },
   {
-    icon: IconArchive,
+    icon: shallowRef(IconArchive),
     name: 'archive',
     text: 'Архив',
   },

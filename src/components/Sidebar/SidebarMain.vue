@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { markRaw, ref } from 'vue';
 
 import { IconArrowLeft, IconFlagRu, IconFlagEn } from '@/components/Icon';
 import useSidebarStore from '@/composables/sidebar.ts';
@@ -14,12 +14,12 @@ const sidebar = useSidebarStore();
 const options = ref([
   {
     label: 'Русский',
-    icon: IconFlagRu,
+    icon: markRaw(IconFlagRu),
     value: 'ru',
   },
   {
     label: 'Английский',
-    icon: IconFlagEn,
+    icon: markRaw(IconFlagEn),
     value: 'en',
   },
 ]);
