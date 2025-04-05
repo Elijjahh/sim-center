@@ -3,45 +3,35 @@ import { IconFilter, IconSearch, IconSort } from '@/components/Icon';
 </script>
 
 <template>
-  <main class="main">
-    <div class="main__header">
-      <h1 class="main__title">Учебные сессий</h1>
+  <div class="main-header">
+    <h1 class="main-header__title">Учебные сессий</h1>
 
-      <div class="main__header-right">
-        <div class="main__search">
-          <div class="main__search-icon">
-            <IconSearch />
-          </div>
-          <input type="text" class="main__search-input" placeholder="Поиск" />
+    <div class="main-header__right">
+      <div class="main-header__search">
+        <div class="main-header__search-icon">
+          <IconSearch />
         </div>
-
-        <button class="main__filter">
-          <IconFilter />
-        </button>
-        <button class="main__sort">
-          <IconSort />
-        </button>
-        <button class="main__btn">Создать</button>
+        <input type="text" class="main-header__search-input" placeholder="Поиск" />
       </div>
+
+      <button class="main-header__filter">
+        <IconFilter />
+      </button>
+      <button class="main-header__sort">
+        <IconSort />
+      </button>
+      <button class="main-header__btn">Создать</button>
     </div>
-  </main>
+  </div>
 </template>
 
 <style scoped lang="scss">
-.main {
-  margin: 8px 8px 8px 0;
-  padding: 16px 24px 24px;
-  width: 100%;
-  border-radius: 12px;
-  background: rgb(255, 255, 255);
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__header-right {
+  &__right {
     display: flex;
     gap: 14px;
   }

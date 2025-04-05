@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import SidebarMain from '@/components/Sidebar/SidebarMain.vue';
-import TheMain from '@/components/TheMain.vue';
+import MainContent from '@/components/Main/MainContent.vue';
 </script>
 
 <template>
   <div class="main-grid">
     <SidebarMain />
-    <TheMain />
+    <MainContent />
   </div>
 </template>
 
